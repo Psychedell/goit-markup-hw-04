@@ -94,12 +94,36 @@ img {
     color: var(--primary-text-color);
     padding-top: 32px;
     padding-bottom: 32px;
+    text-decoration: none;
+}
+
+.auth-nav-link:hover {
+    color: var(--accent-text-color);
+}
+
+.icon-envelope {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.icon-smartphone {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.item.auth {
+    margin-left: 30px;
 }
 
 .auth-nav {
+    align-items: center;
     margin-left: auto;
+    padding: 32px 0;
 }
-
 
 
 .site-nav,
@@ -118,7 +142,6 @@ img {
 .auth-nav .auth-nav-link:not(:first-child) {
     margin-left: 50px;
 }
-
 
 .logo-link {
     color: var(--accent-text-color);
