@@ -106,6 +106,7 @@ img {
     height: 12px;
     margin-right: 10px;
     fill: currentColor;
+    text-align: center;
 }
 
 .icon-smartphone {
@@ -165,6 +166,13 @@ img {
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
+
+    background-image: url(../images/Img-Overlay.png),
+            url(../images/bg-hero.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
 }
 
 .hero-title {
