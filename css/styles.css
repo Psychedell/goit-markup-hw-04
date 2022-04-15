@@ -5,6 +5,7 @@
     --accent-text-color: #2196F3;
     --primary-bg-color: #ffffff;
     --button-bg-color: #F5F4FA;
+    --grey-bg-color: #F5F4FA;
     --focus-button-bg-color: #2196F3;
     --focus-button-bg-color-order: #188CE8;
     --black-logo-color: #000;
@@ -82,6 +83,7 @@ img {
 
 .page-header {
     border-bottom: 1px solid #ECECEC;
+
 }
 
 .site-nav-link {
@@ -91,6 +93,8 @@ img {
 }
 
 .auth-nav-link {
+    display: flex;
+    align-items: center;
     color: var(--primary-text-color);
     padding-top: 32px;
     padding-bottom: 32px;
@@ -123,7 +127,6 @@ img {
 .auth-nav {
     align-items: center;
     margin-left: auto;
-    padding: 32px 0;
 }
 
 
@@ -232,6 +235,18 @@ img {
     margin-left: -30px;
 }
 
+.features-icons {
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background-color: var(--grey-bg-color);
+    border-radius: 4px;
+}
+
+.features-icon {
+    margin: 25px 100px;
+}
+
 .features .item {
     width: 270px;
     margin-left: 30px;
@@ -254,7 +269,7 @@ img {
 
 /* team */
 .section.team {
-    background-color: #F5F4FA;
+    background-color: var(--grey-bg-color);
 }
 
 .section-title-name {
