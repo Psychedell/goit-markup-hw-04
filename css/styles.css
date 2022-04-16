@@ -298,6 +298,43 @@ img {
     margin-bottom: 30px;
 }
 
+.social-icon {
+    width: 44px;
+    height: 44px;
+    fill: #AFB1B8;
+    border-radius: 50%;
+    background-color: #2196F3;
+
+}
+
+.social-icon:hover {
+    fill: var(--button-bg-color);
+
+}
+
+
+.social-item:hover {
+    color: var(--focus-button-bg-color)
+}
+
+.social-item:not(:last-child) {
+     margin-right: 10px;
+}
+
+.list.social {
+    display: flex;
+    justify-content: center;
+}
+
+.list.social a {
+    display: block;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
 .list-team .item {
     background-color: var(--primary-bg-color);
     width: 270px;
