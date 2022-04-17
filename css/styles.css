@@ -9,6 +9,8 @@
     --focus-button-bg-color: #2196F3;
     --focus-button-bg-color-order: #188CE8;
     --black-logo-color: #000;
+    --icon-bg-color: #AFB1B8;
+
 }
 
 .body {
@@ -306,7 +308,7 @@ img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    color: #AFB1B8;
+    color: var(--icon-bg-color);
 }
 
 .social-link:hover {
@@ -344,14 +346,51 @@ img {
     border-radius: 0px 0px 4px 4px;
 }
 
-/* portfolio photos */
-.photo-nav.list {
-    margin-bottom: 50px;
+/* clients */
+ 
+.client-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.photo-nav {
+.item.client:not(:first-child) {
+    margin-left: 30px;
+}
+
+.item.client {
+    width: 170px;
+    height: 92px;  
+}
+
+.button-client {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 1px solid var(--icon-bg-color);
+    border-radius: 4px;
+    color: var(--icon-bg-color);
+}
+
+.button-client:hover {
+    color: var(--focus-button-bg-color);
+    border: 1px solid var(--focus-button-bg-color);
+}
+
+.client-icon {
+    width: 106px;
+    height: 60px;
+    fill: currentColor;
+    }
+
+/* portfolio photos */
+.photo-nav.list {
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 .photo-nav .item + .item {
@@ -386,11 +425,22 @@ img {
     display: block;
 }
 
+.item.portfolio:hover {
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+    box-sizing: border-box;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .container-photo-text {
     border: 1px solid #EEEEEE;
     border-top: transparent;
     padding: 20px 24px;
 }
+
+
 
 /* footer */
 .logo.foot {
@@ -439,22 +489,29 @@ img {
     flex-wrap: wrap;
     width: 206px;
     padding: 72px 0 100px 70px;  
-  
+}
+
+.footer-logo-contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 60px;
 }
 
 .container-footer {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    align-content: center;
 }
 
 .footer-social-slogan {
     font-weight: 700;
     font-size: 14px;
-    line-height: 1.143px;
+    line-height: 1.143;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--white-text-color);
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .footer-social-list {
