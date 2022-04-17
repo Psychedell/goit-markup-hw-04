@@ -103,7 +103,8 @@ img {
     text-decoration: none;
 }
 
-.auth-nav-link:hover {
+.auth-nav-link:hover,
+.auth-nav-link:focus {
     color: var(--accent-text-color);
 }
 
@@ -311,7 +312,8 @@ img {
     color: var(--icon-bg-color);
 }
 
-.social-link:hover {
+.social-link:hover,
+.social-link:focus {
     background-color: var(--focus-button-bg-color);
     color: var(--primary-bg-color);
 }
@@ -375,7 +377,8 @@ img {
     color: var(--icon-bg-color);
 }
 
-.button-client:hover {
+.button-client:hover,
+.button-client:focus {
     color: var(--focus-button-bg-color);
     border: 1px solid var(--focus-button-bg-color);
 }
@@ -425,7 +428,13 @@ img {
     display: block;
 }
 
-.item.portfolio:hover {
+.item.portfolio {
+    border: 1px solid #EEEEEE;
+    border-top: transparent;
+}
+
+.item.portfolio:hover,
+.item.portfolio:focus {
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
@@ -435,8 +444,7 @@ img {
 }
 
 .container-photo-text {
-    border: 1px solid #EEEEEE;
-    border-top: transparent;
+    
     padding: 20px 24px;
 }
 
@@ -529,7 +537,8 @@ img {
     background: rgba(255, 255, 255, 0.1);
 }
 
-.footer-social-link:hover {
+.footer-social-link:hover,
+.footer-social-link:focus {
     background-color: var(--focus-button-bg-color);
     color: var(--primary-bg-color);
 }
