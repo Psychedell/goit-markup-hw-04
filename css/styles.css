@@ -430,11 +430,9 @@ img {
     display: block;
 }
 
-/* .item.portfolio {
-    border: 1px solid #EEEEEE;
-    border-top: transparent;
+.item.portfolio {
     cursor: pointer;
-} */
+}
 
 .item.portfolio:hover,
 .item.portfolio:focus {
