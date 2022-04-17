@@ -282,6 +282,7 @@ img {
 .section-title-profession {
     font-size: 16px;
     line-height: 1.19;
+    padding-bottom: 16px;
 }
 
 .list-team {
@@ -301,20 +302,22 @@ img {
 .social-link {
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     height: 100%;
     border-radius: 50%;
+    color: #AFB1B8;
+}
+
+.social-link:hover {
+    background-color: var(--focus-button-bg-color);
+    color: var(--primary-bg-color);
 }
 
 .social-icon {
     width: 20px;
     height: 20px;
-    fill: #AFB1B8;
-}
-
-.social-icon:hover {
-    fill: var(--primary-bg-color);
-    background-color: var(--focus-button-bg-color);
+    fill: currentColor;
 }
 
 .social-item {
@@ -323,11 +326,7 @@ img {
 }
 
 .social-item:not(:last-child) {
-     margin-right: 10px;
-}
-
-.social-item:hover {
-    color: var(--focus-button-bg-color)
+    margin-right: 10px;
 }
 
 .list.social {
