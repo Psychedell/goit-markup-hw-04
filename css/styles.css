@@ -167,7 +167,7 @@ img {
 .site-nav-link.current::after {
     display: block;
     position: absolute;
-    margin-top: 28px;
+    margin-top: 29px;
     content: '';
     width: 100%;
     height: 4px;
